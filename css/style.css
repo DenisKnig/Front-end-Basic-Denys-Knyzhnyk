@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+p {
+  color: red;
+}
+#para1 {
+  color: green;
+}
+.discriptid {
+  color: yellow;
+}
+.center {
+  text-align: center;
+}
+p b {
+  color: navy;
+}
