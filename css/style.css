@@ -35,13 +35,47 @@ body {
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
+
+  font-family: "Pacifico-Regular";
+  font-style: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #909090;
+  text-align: center;
 }
 
-.py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+h1,
+h2 {
+  color: #303030;
+  font-weight: 700;
 }
 
-.hidden {
-  display: none !important;
+h1 {
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 300px;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0 25px 12px rgba(50, 50, 100, 0.25);
+}
+
+.card img {
+  border-radius: 0.5rem;
+}
+
+.card .profession {
+  color: #303030;
+  font-weight: 900;
+}
+
+.card .card-footer {
+  text-align: end;
+  color: blue;
+}
+
+hr {
+  margin: 10px 0;
 }
