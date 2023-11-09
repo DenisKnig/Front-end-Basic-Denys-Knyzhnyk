@@ -45,3 +45,32 @@ body {
 .hidden {
   display: none !important;
 }
+
+table,
+tr,
+td,
+th {
+  padding: 0.25rem;
+}
+
+table {
+  border: 1px solid;
+  text-align: center;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.container-table {
+  margin: auto;
+}
+
+.container-table caption {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
