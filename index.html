@@ -4,36 +4,101 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson template</title>
-    <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Wisdom Page</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <header>
+    <section class="top-section">
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Homepage</a>
+                    <a href="#" class="nav-link">About author</a>
+                    <a href="#" class="nav-link">Works</a>
+                    <a href="#" class="nav-link">Process</a>
+                    <a href="#" class="nav-link">Contacts</a>
+                </nav>
+            </div>
+        </header>
         <div class="container">
-            <nav>
-                <a href="#" class="nax-link">Home</a>
-            </nav>
+            <h1>Design and layout</h1>
+            <p>Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish"
+                for Latin texts since the early 16th century.
+            </p>
+            <button type="button">WRITE ME</button>
         </div>
-    </header>
+    </section>
+
     <main>
-        <section>
-            <div class="container py-rem">
-                <h1>Hw #</h1>
-                <p>Basic hw</p>
+        <section class="container centered thin description">
+            <h2>About me</h2>
+            <p>
+                About meLorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been
+                the standard "fish" for Latin texts since the early 16th century.
+            </p>
+        </section>
+        <section class="cards">
+            <div class="container">
+                <div class="card">
+                    <img src="./img/Group.png" alt="card-image" />
+                    <div>
+                        <h3>40+</h3>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Group.png" alt="card-image" />
+                    <div>
+                        <h3>40+</h3>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Group.png" alt="card-image" />
+                    <div>
+                        <h3>40+</h3>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Group.png" alt="card-image" />
+                    <div>
+                        <h3>40+</h3>
+                        <p>projects</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/Group.png" alt="card-image" />
+                    <div>
+                        <h3>40+</h3>
+                        <p>projects</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="container description">
+            <div class="centered thin">
+                <h3>How do I work</h3>
+                <p> Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has
+                    been the standard "fish" for Latin texts since the early 16th century.</p>
+            </div>
+            <video width="1110" height="600" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </section>
     </main>
+
     <footer>
         <div class="container">
-            <p>
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear().toString());
-                </script>
-                All rights are reserved
-            </p>
+            <h3>John Smith</h3>
+            <p>(c) 2018. All rights reserved.</p>
+            <div>
+            </div>
         </div>
     </footer>
 </body>
