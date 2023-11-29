@@ -1,9 +1,10 @@
 :root {
   --container-width: 1440px;
-  --basic-space: 165px;
+  --basic-space: 1rem;
   --primary-color: #81a36b;
   --bg-light: #d8d8d6;
   --text-color: #161616;
+  --complex-space: max(var(--basic-space), 166px);
 }
 
 * {
@@ -34,15 +35,13 @@ body {
 
 .container {
   width: 100%;
-  /* max-width: calc(var(--container-width) + var(--basic-space)); */
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
+  max-width: calc(var(--container-width) + var(--complex-space) * 2);
+  padding-left: var(--complex-space);
+  padding-right: var(--complex-space);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.py-rem {
-  padding-top: var(--basic-space);
-  padding-bottom: var(--basic-space);
-}
 .heder {
   background-color: var(--primary-color);
 }
@@ -81,7 +80,7 @@ body {
   justify-content: center;
 }
 
-h1 {
+.first-title {
   font-family: "Vetrino";
   font-size: 62px;
   font-weight: 400;
@@ -104,26 +103,31 @@ h1 {
 }
 .about {
   text-align: center;
-  margin: 120px 0;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .about-text {
   width: 540px;
   margin: auto;
 }
-h2 {
+.for-the-following-headings {
   font-family: "Vetrino";
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 60px;
   text-align: center;
 }
+
+.container-proposes {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-color);
+}
+
 .proposes {
   display: flex;
   justify-content: space-around;
-  padding-top: 80px ;
-  padding-bottom: 80px;
-  background-color: var(--primary-color);
 }
 
 .propose {
@@ -133,6 +137,8 @@ h2 {
 }
 
 .propose-image {
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
 }
 .propose-text {
@@ -148,7 +154,7 @@ h2 {
   justify-content: center;
 }
 
-.next-block-img{
+.next-block-img {
   max-width: 539px;
   max-height: 560px;
   margin-right: 30px;
@@ -160,7 +166,8 @@ h2 {
 }
 
 .cards-container {
-  margin: 120px 0;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .cards {
@@ -188,6 +195,9 @@ h3.card-title {
 
 .footer {
   background-color: var(--primary-color);
+}
+
+.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -236,7 +246,7 @@ h3.card-title {
   position: relative;
   left: 34px;
 }
-.date-font{
+.date-font {
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
