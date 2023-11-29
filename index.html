@@ -4,37 +4,125 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson template</title>
+    <title>Hw10</title>
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="heder">
         <div class="container">
-            <nav>
-                <a href="#" class="nax-link">Home</a>
-            </nav>
+            <div class="heder-cont">
+                <a href="#" class="logo">Amelia F</a>
+                <nav class="nav">
+
+                    <a href="#" class="nav-link">Главная</a>
+                    <a href="#" class="nav-link">О нас</a>
+                    <a href="#" class="nav-link">Кас мы работаем</a>
+                    <a href="#" class="nav-link">Наши работы</a>
+                    <a href="#" class="nav-link">Контакты</a>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="container py-rem">
-                <h1>Hw #</h1>
-                <p>Basic hw</p>
+        <section class="container">
+            <div class="first-block">
+                <div>
+                    <h1>Amelia Flowers</h1>
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    <div class="first-block-buttons">
+                        <button class="first-block-button first-block-button-active">Заказать букет</button>
+                        <button class="first-block-button">Помощь флориста</button>
+                    </div>
+                </div>
+                <img class="first-block-img" src="./img/Rectangle82.png" alt="Flowers">
+
+            </div>
+        </section>
+        <section class="container about">
+            <h2>О НАС</h2>
+            <p class="about-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                является
+                стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+        </section>
+        <section class="container proposes">
+            <div class="propose">
+                <img src="./img/Layer2.png" alt="card" class="propose-image">
+                <p class="propose-text">Лучшие цены</p>
+            </div>
+            <div class="propose">
+                <img src="./img/Layer1.png" alt="card" class="propose-image">
+                <p class="propose-text">Индивидуальный подбор</p>
+            </div>
+            <div class="propose">
+                <img src="./img/Layer1(1).png" alt="card" class="propose-image">
+                <p class="propose-text">Быстрая доставка</p>
+            </div>
+            <div class="propose">
+                <img src="./img/Layer1(2).png" alt="card" class="propose-image">
+                <p class="propose-text">Всегда свежие цветы</p>
+            </div>
+            <div class="propose">
+                <img src="./img/Layer2(1).png" alt="card" class="propose-image">
+                <p class="propose-text">Бонусная система</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="next-block">
+                <img class="next-block-img" src="./img/glass-vase-with-flowers-in-the-interior-of-the-room1.png"
+                    alt="Flowers">
+                <div>
+                    <h2 class="h2">Как мы работаем</h2>
+                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
+                        стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container cards-container">
+            <div>
+                <h2>Наши работы</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img class="next-block-img-card"  src="./img/Rectangle87.png" alt="Flowers">
+                    <h3 class="card-title">Букет” Флоренция”</h3>
+                </div>
+                <div class="card">
+                    <img class="next-block-img-card" src="./img/Rectangle89.png" alt="Flowers">
+                    <h3 class="card-title">Букет” Флоренция”</h3>
+                </div>
+                <div class="card">
+                    <img class="next-block-img-card" src="./img/Rectangle88.png" alt="Flowers">
+                    <h3 class="card-title">Букет” Флоренция”</h3>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>
-                &copy;
-                <script>
-                    document.write(new Date().getFullYear().toString());
-                </script>
-                All rights are reserved
-            </p>
+    <footer class="container footer">
+        <div class="contacts">
+            <div class="contacts-left">
+                <h2>Контакты</h2>
+                <ul>
+                    <li><a href="tel:+380517328964">+380517328964</a></li>
+                    <li><a href="tel:+380517328964">+380517328964</a></li>
+                    <li>Харьков, ул Сумская 115</li>
+                </ul>
+            </div>
+            <div class="contacts-center">
+                <a href="#" class="logo">Amelia F</a>
+            </div>
+            <div class="contacts-right">
+                <h2>Мы в соц. сетях</h2>
+                <div class="socials">
+                    <a class="socials-link" href="https://www.instagram.com/"><img src="./img/Vector.png" alt="instagram"></a>
+                    <a class="socials-link" href="https://web.telegram.org/a/"><img src="./img/Vector(1).png" alt="telegram"></a>
+                    <a class="socials-link" href="https://www.viber.com/ru/"><img src="./img/Vector(2).png" alt="viber"></a>
+                </div>
+            </div>
         </div>
+        <p class="date date-font">© 2023</p>
     </footer>
 </body>
 

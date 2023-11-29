@@ -1,3 +1,11 @@
+:root {
+  --container-width: 1440px;
+  --basic-space: 165px;
+  --primary-color: #81a36b;
+  --bg-light: #d8d8d6;
+  --text-color: #161616;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +17,13 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  object-fit: cover;
-}
-
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.64;
   font-weight: 400;
-  color: #202020;
+  color: var(--text-color);
+  background-color: var(--bg-light);
 }
 
 body {
@@ -30,18 +34,210 @@ body {
 
 .container {
   width: 100%;
-  max-width: calc(1110px + 2rem);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  /* max-width: calc(var(--container-width) + var(--basic-space)); */
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
 }
 
 .py-rem {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: var(--basic-space);
+  padding-bottom: var(--basic-space);
+}
+.heder {
+  background-color: var(--primary-color);
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Vetrino";
+  font-size: 36px;
+  font-weight: 400;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.heder-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-link + .nav-link {
+  margin-left: 50px;
+}
+.nav-link {
+  padding: 20px 0;
+}
+.first-block-img {
+  width: 540px;
+  height: 670px;
+  margin-left: 30px;
+}
+.first-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hidden {
-  display: none !important;
+h1 {
+  font-family: "Vetrino";
+  font-size: 62px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.first-block-buttons {
+  margin-top: 60px;
+}
+
+.first-block-button + .first-block-button {
+  margin-left: 65px;
+}
+.first-block-button {
+  border: 1px solid var(--primary-color);
+  padding: 20px 31px;
+  background-color: transparent;
+}
+.first-block-button-active {
+  background-color: var(--primary-color);
+}
+.about {
+  text-align: center;
+  margin: 120px 0;
+}
+
+.about-text {
+  width: 540px;
+  margin: auto;
+}
+h2 {
+  font-family: "Vetrino";
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.proposes {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px ;
+  padding-bottom: 80px;
+  background-color: var(--primary-color);
+}
+
+.propose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.propose-image {
+  margin-bottom: 20px;
+}
+.propose-text {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.next-block {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-block-img{
+  max-width: 539px;
+  max-height: 560px;
+  margin-right: 30px;
+}
+
+.next-block-img-card {
+  max-width: 320px;
+  max-height: 400px;
+}
+
+.cards-container {
+  margin: 120px 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  padding: 15px;
+  background-color: var(--primary-color);
+}
+
+.card + .card {
+  margin-left: 30px;
+}
+
+h3.card-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.contacts-left li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.contacts-center a {
+  font-family: "Vetrino";
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-link + .socials-link {
+  margin-left: 20px;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+}
+
+.date {
+  text-align: center;
+  position: relative;
+  left: 34px;
+}
+.date-font{
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 500;
 }
