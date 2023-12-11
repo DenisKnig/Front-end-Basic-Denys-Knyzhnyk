@@ -243,6 +243,9 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  /* margin-left: 40px; */
+}
+.cards-next + .cards-next {
   margin-left: 40px;
 }
 .img-card {
@@ -256,9 +259,8 @@ body {
 .label {
   position: absolute;
   left: 10px;
-  background-color: white;
   top: 10px;
-  padding: 15px;
+  padding: 6px;
   border-radius: 3px;
   background: rgba(29, 47, 56, 0.8);
   color: #fff;
@@ -267,8 +269,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  width: 57px;
-  height: 30px;
 }
 .h3-next-bloc {
   width: 297px;
@@ -279,6 +279,7 @@ body {
   font-weight: 400;
   line-height: 35px;
   padding: 13px;
+  padding-left: 0;
 }
 .p-next-bloc {
   color: #1d2f38;
@@ -296,6 +297,8 @@ body {
 }
 .feedback-title {
   display: flex;
+  align-items: center;
+  margin-bottom: 44px;
 }
 .feedback-img {
   margin: 50px 50px 50px 50px;
@@ -306,12 +309,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 1150px;
-  height: 112px;
 }
 .imgl {
   width: 40px;
   height: 40px;
+  position: relative;
+  left: 10px;
+  top: 10px;
 }
 .bg-imgl {
   border-radius: 500px;
@@ -320,7 +324,7 @@ body {
   height: 60px;
   margin-left: 13px;
 }
-.feedback-bloc{
+.feedback-bloc {
   margin: 50px 50px 50px 50px;
 }
 
@@ -332,9 +336,59 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 35px;
-  margin-bottom: 44px;
+  margin-left: 13px;
+}
+.p-feedback {
+  color: #1d2f38;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
 }
 
+.email {
+  color: #536d7a;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid #aabcc5;
+  background: #fff;
+  margin-bottom: 31px;
+}
+.feedback-b {
+  display: flex;
+  align-items: center;
+}
+.feedback-sub {
+  width: 82px;
+  height: 50px;
+  border-radius: 5px;
+  background: #ffc728;
+  color: #000;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.feed-p {
+  color: #536d7a;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
 .button-temlate {
   width: 111px;
   height: 52px;
@@ -358,6 +412,10 @@ body {
 .bg-ft {
   background-color: #f7f9fa;
 }
+.first-form {
+  display: flex;
+  flex-direction: column;
+}
 .ft0-dv {
   display: flex;
 }
@@ -366,22 +424,81 @@ body {
   max-width: 33%;
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
-
+.ft-h3 {
+  color: #333;
+  font-family: Bitter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  margin-bottom: 12px;
+}
+.ft-text {
+  color: #1d2f38;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
 .ft2-dv {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-bottom: 60px;
 }
 .ft2-dv-card {
   display: flex;
   align-items: center;
 }
+.ft2-img-card-m {
+  margin-right: 9px;
+}
+.ft2-dv-card-mb {
+  margin-bottom: 20px;
+}
 .ft3-dv {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.ft3-sc {
+  
+  border-radius: 5px 0px 0px 5px;
+  background: #fff;
+}
+.ft3-bt {
+  width: 81px;
+  height: 48px;
+  border-radius: 0px 5px 5px 0px;
+  background: #768f9c;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
 }
 .ft3-dv-br {
   display: flex;
+  margin-bottom: 20px;
+}
+.ft3-ab{
+  margin-bottom: 7px;
+}
+.ft-line{
+  margin-top: 27px ;
+  margin-bottom: 20px ;
+}
+.ft-line-next{
+  margin-bottom: 22px ;
 }
 .soc {
   display: flex;
@@ -399,6 +516,6 @@ body {
   justify-content: space-between;
   justify-content: flex-end;
 }
-.wwww {
-  margin-left: 6px;
+.last {
+  margin-left: 10px;
 }
