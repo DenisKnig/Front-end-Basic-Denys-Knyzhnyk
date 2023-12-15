@@ -48,67 +48,154 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  padding-left: 10%; /* Adjust the percentage based on your layout needs */
+  padding-left: 10%; 
 }
 
 .login-container {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
   padding: 2rem;
   width: 100%;
-  max-width: 380px; /* Set the max width based on your layout */
+  max-width: 380px; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  border-radius: 30px;
+  border: 1px solid #153416
 }
 
+
 #login-btn, #register-btn {
-  background-color: #4CAF50;
+  background: #153416;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 20px;
   cursor: pointer;
   font-weight: bold;
-  flex-grow: 1; /* Buttons take equal space */
+  flex-grow: 1; 
+  width: 50%;
 }
 
 #register-btn {
   background-color: transparent;
-  color: #4CAF50;
-  border: 2px solid #4CAF50;
-  margin-left: 0.5rem; /* Space between buttons */
+  color: white;
+ 
+  margin-left: 0.5rem; 
 }
+.h1{
 
+  margin-top: 77px;
+  margin-bottom: 29px;
+  color: #FFF;
+  text-align: center;
+  width: 100%;
+}
 .login-form {
   display: flex;
   flex-direction: column;
+  
 }
 
-.input-group {
-  margin-bottom: 1rem;
-}
-
-.input-group input {
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  background: #929191;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 15px; 
   width: 100%;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
 }
 
+
+.login-form input::placeholder {
+  color: white;
+}
 .form-options {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+ 
+  
+  
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+}
+.forgot-password {
+  text-decoration: underline;
+  color: #153416;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #153416;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.checkbox-container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .remember-me {
@@ -119,9 +206,13 @@ body {
 .remember-me input[type="checkbox"] {
   margin-right: 0.5rem;
 }
-
+.input-group{
+margin-top: 30px;
+margin-bottom: 40px;
+}
 .submit-btn {
-  background-color: #4CAF50;
+  width: 100%;
+  background-color:#153416;;
   color: white;
   border: none;
   padding: 1rem;
@@ -144,6 +235,8 @@ body {
 
 .social-link {
   color: #4CAF50;
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  padding: 0.5rem 1rem; 
   text-decoration: none;
-  font-weight: bold;}
+  font-weight: bold;
+;}
+  
