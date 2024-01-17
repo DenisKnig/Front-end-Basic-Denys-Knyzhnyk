@@ -30,9 +30,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: calc(1110px + 2rem);
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: calc(1110px + 100px);
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,4 +44,130 @@ body {
 
 .hidden {
   display: none !important;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  border: bottom 1px solid gray;
+}
+.nav-container {
+  display: flex;
+}
+.button-container {
+  display: flex;
+}
+nav a + nav a {
+  margin-left: 57px;
+}
+nav {
+  margin-left: 50px;
+}
+.button-container button + .button-container button {
+  margin-left: 10px;
+}
+.button {
+  color: black;
+  width: 145px;
+  height: 25px;
+  border: 1px solid gray;
+}
+.button.big {
+  width: 160px;
+  height: 60px;
+}
+.button.active {
+  color: white;
+  background-color: orange;
+}
+.banner-container {
+  display: flex;
+}
+.banner-container-left {
+  display: flex;
+  flex-direction: column;
+}
+.banner-button-container {
+  display: flex;
+}
+.next-block1-container {
+  display: flex;
+  flex-direction: column;
+}
+.next-block1-logos-container {
+  display: flex;
+  background-color: orange;
+  margin-bottom: 90px;
+}
+.next-block1-logos-container img + .next-block1-logos-container img {
+  margin-left: 103px;
+}
+.next-block2-container {
+  display: flex;
+  margin-bottom: 250px;
+}
+.next-block2-left-container {
+  display: flex;
+}
+.next-block2-container.reverse {
+  flex-direction: row-reverse;
+}
+.next-block3-container {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0 147px;
+  background-color: bisque;
+}
+.next-block3-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.next-block3-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+}
+.transparent-back {
+  background-color: transparent;
+}
+.card-aligned-left * {
+  width: 100%;
+  text-align: left;
+}
+.transparent-back > h2 {
+  text-align: center;
+}
+.bl-back {
+  background-color: blue;
+}
+.bl-tex {
+  font-size: 30px;
+}
+.bl-container-ft {
+  font-size: 15px;
+}
+.or-back {
+  background-color: brown;
+}
+.or-tex {
+}
+.or-cont-left {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  border-right: 1px solid black;
+  padding-right: 71px;
+}
+.or-cont-r {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 30px 61px 22px 71px;
+}
+.or-card {
+  display: flex;
+  flex-direction: column;
+}
+.or-container-ft {
 }
